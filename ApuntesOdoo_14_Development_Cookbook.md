@@ -30,7 +30,7 @@ formación o evaluación de módulos.
 
 10. **report/** Odoo proporciona una función para generar documentos PDF como ventas pedidos y facturas. Este directorio contiene todos los archivos relacionados con los informes en PDF. Aprenderemos más sobre **los informes PDF en el Capítulo 12, Automatización, Flujos de trabajo, Correos electrónicos e impresión.**
 
-###Estructura con los directiorios más utilizados
+### Estructura con los directiorios más utilizados
 
 ```
 📦my_library
@@ -53,7 +53,6 @@ formación o evaluación de módulos.
  ┣ 📜__init__.py
  ┗ 📜__manifest__.py
 ```
-
 
 ----------------------------------------------------------------
 ### Ejemplo de __manifest__.py
