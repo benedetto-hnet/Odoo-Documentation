@@ -108,6 +108,44 @@ formación o evaluación de módulos.
 
 ----------------------------------------------------------------
 
+### Atributos convencionales de los views
+
+* **name:** Este es el título que identifica la vista
+* **model:** Este es el identificador interno del modelo de destino, como se define en su atributo _name
+* **arch:** Esta es la arquitectura de la vista, donde su estructura está realmente definida. Aquí es donde diferentes tipos de vista difieren entre sí.
+
+#### Algunos elementos
+* **record:** Los registros de datos se definen mediante una etiqueta < record >
+* **form:** Los formularios se definen con un elemento < form > superior y su lienzo es una cuadrícula de dos columnas.
+* **group:** Los elementos < group > se utilizan para componer campos verticalmente. Dos grupos dan como resultado dos columnas con campos, que se agregan usando el elemento < field >.
+* **field:** Los elementos < field > usan un widget predeterminado de acuerdo con su tipo de dato, pero se puede usar un widget específico con la ayuda del atributo widget.
+   
+###Ejemplo básico de como se miraría una view
+```
+    <record id="library_book_view_form" model="ir.ui.view">
+        <field name="name">Library Book Form</field>
+        <field name="model">library.book</field>
+        <field name="arch" type="xml">
+           <!-- Arquitectura de ejemplo,aquí es donde se estructura-->
+            <form>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="author_ids" widget="many2many_tags"/>
+                    </group>
+                    <group>
+                        <field name="date_release"/>
+                    </group>
+                </group>
+            </form>
+           
+        </field>
+    </record>
+```
+
+   
+----------------------------------------------------------------
+
 ### Seguridad de Acceso
 
 Al agregar un nuevo data model, debe definir quién puede **crear, leer, actualizar y eliminar registros.** Al crear una aplicación totalmente nueva, esto puede implicar la definición de nuevos grupos de usuarios. En consecuencia, si un usuario no tiene estos derechos de acceso, entonces Odoo no mostrará sus menús y vistas.
