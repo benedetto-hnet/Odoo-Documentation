@@ -120,7 +120,7 @@ formación o evaluación de módulos.
 * **group:** Los elementos < group > se utilizan para componer campos verticalmente. Dos grupos dan como resultado dos columnas con campos, que se agregan usando el elemento < field >.
 * **field:** Los elementos < field > usan un widget predeterminado de acuerdo con su tipo de dato, pero se puede usar un widget específico con la ayuda del atributo widget.
    
-###Ejemplo básico de como se miraría una view
+### Ejemplo básico de como se miraría una view
 ```
     <record id="library_book_view_form" model="ir.ui.view">
         <field name="name">Library Book Form</field>
