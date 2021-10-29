@@ -29,6 +29,32 @@ formación o evaluación de módulos.
 9. **wizard/** Contiene todos los archivos relacionados con los asistentes. En Odoo, se utilizan wizards para contener datos intermedios. Aprendemos más sobre **los asistentes en el Capítulo 8, Avanzado Técnicas de desarrollo del lado del servidor.**
 
 10. **report/** Odoo proporciona una función para generar documentos PDF como ventas pedidos y facturas. Este directorio contiene todos los archivos relacionados con los informes en PDF. Aprenderemos más sobre **los informes PDF en el Capítulo 12, Automatización, Flujos de trabajo, Correos electrónicos e impresión.**
+
+###Estructura con los directiorios más utilizados
+
+```
+📦my_library
+ ┣ 📂controllers
+ ┃ ┗ 📜__init__.py
+ ┣ 📂data
+ ┣ 📂demo
+ ┣ 📂il8n
+ ┣ 📂models
+ ┃ ┗ 📜__init__.py
+ ┣ 📂report
+ ┣ 📂security
+ ┣ 📂static
+ ┃ ┗ 📂description
+ ┃ ┃ ┗ 📜icon.png
+ ┣ 📂views
+ ┃ ┗ 📜views.xml
+ ┣ 📂wizard
+ ┃ ┗ 📜__init__.py
+ ┣ 📜__init__.py
+ ┗ 📜__manifest__.py
+```
+
+
 ----------------------------------------------------------------
 ### Ejemplo de __manifest__.py
 
